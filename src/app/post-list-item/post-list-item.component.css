@@ -1,0 +1,14 @@
+li {
+	margin-bottom: 20px !important;
+}
+
+button{
+	margin-right: 5px;
+}
+
+.datePost{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	color: grey;
+}

@@ -1,0 +1,12 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': postItemLoveItsMod > 0,
+                'list-group-item-danger': postItemLoveItsMod < 0 }">
+  <h4>{{ postItemTitle }}</h4>
+  <p>{{ postItemContent }}</p>
+  <p class="datePost">{{ postItemDate | date: 'short'}}</p>
+  <p [ngStyle]="{color: getColor()}">
+	<button type="button" class="btn btn-success" (click)="addLike()" >+</button>
+	<button type="button" class="btn btn-danger" (click)="removeLike()">-</button>
+	{{ postItemLoveItsMod }} like
+	</p>
+</li>
